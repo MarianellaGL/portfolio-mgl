@@ -23,7 +23,7 @@ const Repositories = () => {
     }
 
     if (error) {
-        return <h1>ERROR</h1>
+        return <div className='flex justify-center h-screen my-6'><h1>En estos momentos estamos trabajando para mostrarte esta sección!</h1></div>
     }
 
 
