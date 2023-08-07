@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@octokit/core": "^5.0.0",
+    "@octokit/rest": "^20.0.1",
     "@types/node": "20.4.8",
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.14",
+    "cross-fetch": "^4.0.0",
+    "dotenv": "^16.3.1",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
     "next": "13.4.12",
