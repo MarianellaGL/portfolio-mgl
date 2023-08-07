@@ -15,6 +15,7 @@ const useOctokitFetch = (path: string, options: UseOctokitFetchOptions) => {
     useEffect(() => {
         if (typeof window !== 'undefined') {
             const fetchData = async () => {
+                console.log('aver', options.accessToken)
                 const octokit = new Octokit({
                     auth: options.accessToken, // Utilizar el accessToken como la opción de autenticación
                 });
