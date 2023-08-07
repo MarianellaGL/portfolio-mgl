@@ -15,7 +15,6 @@ const useOctokitFetch = (path: string, options: UseOctokitFetchOptions) => {
     useEffect(() => {
         if (typeof window !== 'undefined') {
             const fetchData = async () => {
-                console.log('aver', options.accessToken)
                 const octokit = new Octokit({
                     auth: options.accessToken, // Utilizar el accessToken como la opción de autenticación
                 });
@@ -26,10 +25,8 @@ const useOctokitFetch = (path: string, options: UseOctokitFetchOptions) => {
                     const response = await octokit.rest.repos.listForUser({
                         username: options.username,
                     });
-                    console.log('hola', response)
                     setData(response.data);
                 } catch (err: any) {
-                    console.log(err.message)
                     setError(err.message || 'Error fetching data');
                 }
 
