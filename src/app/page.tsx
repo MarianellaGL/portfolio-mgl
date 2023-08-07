@@ -23,7 +23,7 @@ export default function Home() {
                 href="/portfolio"
                 className="text-blue-600 font-semibold hover:underline"
               >
-                Ver mi portafolio completo &rarr;
+                Ver mi portfolio completo &rarr;
               </a>
             </div>
           </div>

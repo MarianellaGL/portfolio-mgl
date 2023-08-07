@@ -5,19 +5,19 @@ export const Navigation: React.FC = () => {
 
     const links = [
         {
-            label: "home",
+            label: "Home",
             route: "/",
         },
         {
-            label: "about",
+            label: "About",
             route: "/about",
         },
         {
-            label: "portfolio",
+            label: "Portfolio",
             route: "/portfolio"
         },
         {
-            label: "stack",
+            label: "Stack",
             route: "/stack"
         }
     ];
@@ -39,7 +39,7 @@ export const Navigation: React.FC = () => {
             </div>
             <button className="bg-transparent hover:bg-indigo-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-white-500 hover:border-transparent rounded text-white"> <a
                 href="/mi_cv.pdf"
-                download="mi_cv.pdf">Descargar CV</a></button>
+                download="MarianellaGomezLuna.pdf">Descargar CV</a></button>
         </nav>
     </header>)
 };
