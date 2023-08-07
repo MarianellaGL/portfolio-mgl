@@ -28,6 +28,7 @@ const useOctokitFetch = (path: string, options: UseOctokitFetchOptions) => {
                     console.log('hola', response)
                     setData(response.data);
                 } catch (err: any) {
+                    console.log(err.message)
                     setError(err.message || 'Error fetching data');
                 }
 
