@@ -25,6 +25,7 @@ const useOctokitFetch = (path: string, options: UseOctokitFetchOptions) => {
                     const response = await octokit.rest.repos.listForUser({
                         username: options.username,
                     });
+                    console.log('hola', response)
                     setData(response.data);
                 } catch (err: any) {
                     setError(err.message || 'Error fetching data');
