@@ -7,8 +7,7 @@ type UseOctokitFetchOptions = {
     accessToken: string;
 };
 const useOctokitFetch = (path: string, options: UseOctokitFetchOptions) => {
-    console.log('path', path)
-    console.log(options)
+
     const [data, setData] = useState<Array<any>>();
     const [isLoading, setIsLoading] = useState<Boolean>(false);
     const [error, setError] = useState<string>();
@@ -26,7 +25,6 @@ const useOctokitFetch = (path: string, options: UseOctokitFetchOptions) => {
                     const response = await octokit.rest.repos.listForUser({
                         username: options.username,
                     });
-                    console.log('response', response);
                     setData(response.data);
                 } catch (err: any) {
                     setError(err.message || 'Error fetching data');

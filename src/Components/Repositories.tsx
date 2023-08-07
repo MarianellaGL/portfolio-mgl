@@ -9,7 +9,6 @@ const Repositories = () => {
     const accessToken: string = process.env.NEXT_PUBLIC_APP_AUTH || ""
     const { data, isLoading, error } = useOctokitFetch(path, { username, accessToken })
     const [hoveredRepoId, setHoveredRepoId] = useState(null);
-    console.log(data)
 
 
     if (isLoading) {
