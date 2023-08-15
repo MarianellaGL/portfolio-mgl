@@ -6,7 +6,7 @@ const AboutPage = () => {
             <h1 className="text-indigo-600 text-4xl font-bold mb-4 ml-10 mr-10" style={{ animationDuration: '1s' }}>
                 Acerca de...
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 mb-16">
                 <div className="text-lg leading-relaxed ml-10 mr-10">
                     <p className="mb-4">
                         Mi presentación quizás queda un poco corta cuando se trata de hablar de mi experiencia. Empecé por el año 2019 a programar. Previo a eso me había egresado como locutora en ISER,
