@@ -38,7 +38,7 @@ export const Navigation: React.FC = () => {
                 </ul>
             </div>
             <button className="bg-transparent hover:bg-indigo-500 text-white-700 font-semibold hover:text-white py-2 px-4 border border-white-500 hover:border-transparent rounded text-white"> <a
-                href="/mi_cv.pdf"
+                href="/marianellaGomezLuna.pdf"
                 download="MarianellaGomezLuna.pdf">Descargar CV</a></button>
         </nav>
     </header>)
