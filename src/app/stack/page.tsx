@@ -23,7 +23,7 @@ const StackPage = () => {
     ];
 
 
-    return (<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-24">
+    return (<div className="min-h-screen grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-24">
         {imagesArray.map((image, index) => (
             <div key={index} className="bg-white-200 p-4 flex justify-center items-center">
                 <Image
