@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react'
 import useOctokitFetch from "@/hooks/useOctokitFetch";
+import Link from 'next/link';
 
 
 const Repositories = () => {
@@ -31,20 +32,22 @@ const Repositories = () => {
     return (
         <>
             <div className="flex justify-center my-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16 w-full max-w-6xl">
+                <div className="grid grid-cols-1 md:grid-cols-2 bg-white lg:grid-cols-3 gap-4 mb-16 w-full max-w-6xl">
                     {data && data.length > 0 ? (
                         data.map((repo) => (
                             <div
                                 key={repo.id}
                                 className={`p-4 border rounded-lg shadow-md bg-white dark:bg-gray-800`}
                             >
-                                <h2
-                                    className="md:text-xl font-semibold cursor-pointer"
-                                    onMouseEnter={() => setHoveredRepoUrl(repo.html_url)}
-                                    onMouseLeave={() => setHoveredRepoUrl(null)}
-                                >
-                                    {repo.full_name}
-                                </h2>
+                                <Link href={repo}>
+                                    <h2
+                                        className="md:text-xl font-semibold cursor-pointer"
+                                        onMouseEnter={() => setHoveredRepoUrl(repo.html_url)}
+                                        onMouseLeave={() => setHoveredRepoUrl(null)}
+                                    >
+                                        {repo.full_name}
+                                    </h2>
+                                </Link>
                                 {hoveredRepoUrl === repo.html_url && (
                                     <div className="absolute z-10 bg-indigo-200 text-white border rounded-lg p-2">
                                         <p>{repo.url}</p>

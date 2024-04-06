@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="animate-fade-in">
+    <div className="animate-fade-in mx-8 text-justify">
       <div className="container mx-auto py-8">
         <div className="flex flex-col items-center mb-10">
           <h1 className="text-4xl font-bold bg-gradient-to-r from-indigo-600 via-pink-500 to-violet-400 inline-block text-transparent bg-clip-text">Bienvenido a mi mundo digital</h1>
