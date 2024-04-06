@@ -32,12 +32,12 @@ const Repositories = () => {
     return (
         <>
             <div className="flex justify-center my-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 bg-white lg:grid-cols-3 gap-4 mb-16 w-full max-w-6xl">
+                <div className="grid grid-cols-1 md:grid-cols-2 dark:bg-white bg-white lg:grid-cols-3 gap-4 mb-16 w-full max-w-6xl">
                     {data && data.length > 0 ? (
                         data.map((repo) => (
                             <div
                                 key={repo.id}
-                                className={`p-4 border rounded-lg shadow-md bg-white dark:bg-gray-800`}
+                                className={`p-4 border rounded-lg shadow-md dark:bg-white bg-white`}
                             >
                                 <Link href={repo}>
                                     <h2
