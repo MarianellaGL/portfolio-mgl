@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const AboutPage = () => {
     return (
-        <div className="animate animate-fade-in text-justify ">
+        <div className="min-h-screen animate animate-fade-in text-justify ">
             <div className="container mx-auto py-8">
                 <h1 className="text-indigo-600 text-4xl font-bold mb-4 ml-10 mr-10" style={{ animationDuration: '1s' }}>
                     Acerca de...
