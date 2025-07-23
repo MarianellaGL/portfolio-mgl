@@ -1,8 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export const Footer = () => {
+  const t = useTranslations("Common");
   return (
     <motion.footer
       initial={{ y: 40, opacity: 0 }}
@@ -18,7 +20,7 @@ export const Footer = () => {
           width={40}
           height={40}
         />
-        <p className="font-semibold">Agregame a LinkedIn:</p>
+        <p className="font-semibold">{t("footer")}</p>
         <a
           href="https://www.linkedin.com/in/marianella-gomez-luna/"
           target="_blank"

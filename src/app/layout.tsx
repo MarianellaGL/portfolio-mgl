@@ -1,16 +1,20 @@
-import { redirect } from "next/navigation";
 import { defaultLocale } from "../../next-i18next.config";
 
-export default function RootLayout({
+export const revalidate = 0;
+
+export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: any;
 }) {
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
+
   return (
-    <html lang={defaultLocale}>
-      <body suppressHydrationWarning>
-        <>{children}</>
-      </body>
+    <html lang={locale}>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 }

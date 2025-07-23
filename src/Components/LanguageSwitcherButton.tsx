@@ -10,17 +10,17 @@ export default function LanguageSwitcherButton({
   const router = useRouter();
   const pathname = usePathname();
 
-  const switchTo = locale === "en" ? "es" : "en";
+  const newLocale = locale === "en" ? "es" : "en";
 
-  const newPath = (() => {
-    const segments = pathname.split("/");
-    segments[1] = switchTo;
-    return segments.join("/");
-  })();
+  const newPathname = pathname.replace(/^\/[a-z]{2}/, `/${newLocale}`);
+
+  function handleClick() {
+    router.push(newPathname);
+  }
 
   return (
-    <button onClick={() => router.push(newPath)} className={className}>
-      🌐 {switchTo.toUpperCase()} / {locale.toUpperCase()}
+    <button onClick={handleClick} className={className}>
+      🌐 {newLocale.toUpperCase()} / {locale.toUpperCase()}
     </button>
   );
 }

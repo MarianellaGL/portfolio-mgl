@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import "../globals.css";
 import { Nunito } from "next/font/google";
@@ -22,21 +21,25 @@ export const metadata: Metadata = {
   },
 };
 
+export const dynamic = "force-dynamic";
+
+export async function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "es" }];
+}
+
 export default async function LocaleLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: any;
 }) {
-  const { locale } = await params;
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
 
-  if (!locales.includes(locale)) {
-    notFound();
-  }
+  if (!["en", "es"].includes(locale)) notFound();
 
-  const messages = (await import(`../../../public/locales/${locale}.json`))
-    .default;
+  const messages = (await import(`@/locales/${locale}.json`)).default;
 
   return (
     <div className={nunito.className}>

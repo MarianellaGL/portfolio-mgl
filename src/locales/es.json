@@ -1,0 +1,21 @@
+{
+  "Common": {
+    "home": "Inicio",
+    "portfolio": "Portfolio",
+    "stack": "Stack",
+    "cv": "CV",
+    "footer": "Agregame a LinkedIn",
+    "downloadCvAria": "Descargar CV de Marianella Gomez Luna",
+    "switch": "Cambiar idioma"
+  },
+  "Home": {
+    "title": "Bienvenido a mi mundo digital",
+    "portfolioLink": "Ver mi portfolio completo",
+    "paragraph1": "¡Hola! Soy una desarrolladora de software apasionada por crear experiencias digitales de alto impacto. Tengo más de cinco años de experiencia en desarrollo web, especializada en frontend, y una sólida formación en backend con tecnologías JavaScript como Node.js y NestJS. También trabajo con bases de datos relacionales como PostgreSQL y MySQL.",
+    "paragraph2": "Estoy en constante aprendizaje y actualizándome con las últimas tendencias del ecosistema web. Disfruto trabajar en proyectos colaborativos que combinan creatividad, estrategia y tecnología para resolver desafíos del mundo real.",
+    "paragraph3": "Además de mi formación técnica, promuevo activamente la diversidad en la tecnología. He sido mentora en MET (Mujeres en Tecnología), apoyando a mujeres que comienzan su carrera en el campo. Actualmente formo parte de Pilar Tecno, un programa respaldado por el Gobierno de La Rioja, donde enseño Git y React.",
+    "paragraph4": "Como profesional independiente, he trabajado en proyectos de distintos tamaños usando herramientas como Next.js, React Native, Astro y otras tecnologías modernas de JavaScript.",
+    "paragraph5": "Estoy entusiasmada por seguir creciendo, aprendiendo y construyendo soluciones innovadoras.",
+    "contact": "ponete en contacto conmigo"
+  }
+}
