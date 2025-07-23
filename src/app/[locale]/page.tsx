@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home({ params }: { params: { locale: string } }) {
   const t = useTranslations("Home");
@@ -25,12 +26,12 @@ export default function Home({ params }: { params: { locale: string } }) {
               </div>
             </div>
             <div className="flex justify-center mt-4">
-              <a
+              <Link
                 href="/portfolio"
                 className="text-fuchsia-600 font-semibold hover:underline"
               >
                 {t("portfolioLink")} &rarr;
-              </a>
+              </Link>
             </div>
           </div>
           <div className="text-lg leading-relaxed flex flex-col justify-center">
