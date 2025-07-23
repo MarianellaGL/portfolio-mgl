@@ -70,7 +70,7 @@ export const Navigation: React.FC = () => {
                   href="/marianellaGomezLuna.pdf"
                   download={
                     locale === "en"
-                      ? "MarianellaGomezLuna-resume.pdf"
+                      ? "MarianellaGomezLuna-Resume.pdf"
                       : "MarianellaGomezLuna-CV.pdf"
                   }
                   className="bg-gradient-to-r from-fuchsia-500 via-pink-500 to-violet-500 text-white font-bold px-3 py-2 sm:px-4 sm:py-3 md:px-6 md:py-4 rounded-lg border-2 border-fuchsia-300 shadow-lg shadow-fuchsia-500/30 hover:from-pink-600 hover:to-fuchsia-600 focus-visible:ring-2 focus-visible:ring-fuchsia-400 transition-all duration-300 text-sm sm:text-base"
