@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home({ params }: { params: { locale: string } }) {
+export default function Home() {
   const t = useTranslations("Home");
 
   return (

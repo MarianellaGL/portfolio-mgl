@@ -14,7 +14,7 @@ const useOctokitFetch = (options: UseOctokitFetchOptions) => {
   useEffect(() => {
     const fetchData = async () => {
       const octokit = new Octokit({
-        auth: options.accessToken
+        auth: options.accessToken,
       });
 
       setIsLoading(true);
@@ -33,7 +33,7 @@ const useOctokitFetch = (options: UseOctokitFetchOptions) => {
     };
 
     fetchData();
-  }, []);
+  }, [options.accessToken, options.username]);
 
   return { data, isLoading, error };
 };
