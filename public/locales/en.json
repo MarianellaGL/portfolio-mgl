@@ -1,0 +1,21 @@
+{
+  "Common": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "stack": "Stack",
+    "cv": "Resume",
+    "downloadCvAria": "Download resume of Marianella Gomez Luna",
+    "switch": "Switch language"
+  },
+
+  "Home": {
+    "title": "Welcome to my digital world",
+    "portfolioLink": "View my full portfolio",
+    "paragraph1": "Hi! I'm a passionate software developer focused on creating high-impact digital experiences. I have over five years of experience in web development, specializing in frontend, and a strong backend background with JavaScript technologies like Node.js and NestJS. I also work with relational databases such as PostgreSQL and MySQL.",
+    "paragraph2": "I'm constantly learning and staying up to date with the latest trends in the web ecosystem. I enjoy working on collaborative projects that combine creativity, strategy, and technology to solve real-world challenges.",
+    "paragraph3": "In addition to my technical background, I actively promote diversity in tech. I've mentored at MET (Women in Technology), supporting women starting their careers in the field. I'm currently part of Pilar Tecno, a program backed by the Government of La Rioja, where I teach Git and React.",
+    "paragraph4": "As an independent professional, I’ve worked on projects of various sizes using tools like Next.js, React Native, Astro, and other modern JavaScript technologies.",
+    "paragraph5": "I'm excited to keep growing, learning, and building innovative solutions.",
+    "contact": "get in touch with me"
+  }
+}

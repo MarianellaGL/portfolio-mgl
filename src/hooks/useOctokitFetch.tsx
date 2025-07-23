@@ -1,43 +1,41 @@
-"use client"
-import { useEffect, useState } from 'react';
-import { Octokit } from '@octokit/rest';
+"use client";
+import { useEffect, useState } from "react";
+import { Octokit } from "@octokit/rest";
 
 type UseOctokitFetchOptions = {
-    username: string;
-    accessToken: string;
+  username: string;
+  accessToken: string;
 };
-const useOctokitFetch = (path: string, options: UseOctokitFetchOptions) => {
+const useOctokitFetch = (options: UseOctokitFetchOptions) => {
+  const [data, setData] = useState<Array<any>>();
+  const [isLoading, setIsLoading] = useState<Boolean>(false);
+  const [error, setError] = useState<string>();
 
-    const [data, setData] = useState<Array<any>>();
-    const [isLoading, setIsLoading] = useState<Boolean>(false);
-    const [error, setError] = useState<string>();
+  useEffect(() => {
+    const fetchData = async () => {
+      const octokit = new Octokit({
+        auth: options.accessToken
+      });
 
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            const fetchData = async () => {
-                const octokit = new Octokit({
-                    auth: options.accessToken, // Utilizar el accessToken como la opción de autenticación
-                });
+      setIsLoading(true);
 
-                setIsLoading(true);
+      try {
+        const response = await octokit.rest.repos.listForUser({
+          username: options.username,
+        });
+        setData(response.data);
+      } catch (err: any) {
+        console.error("Error fetching repositories:", err);
+        setError(err.message || "Error fetching data");
+      }
 
-                try {
-                    const response = await octokit.rest.repos.listForUser({
-                        username: options.username,
-                    });
-                    setData(response.data);
-                } catch (err: any) {
-                    setError(err.message || 'Error fetching data');
-                }
+      setIsLoading(false);
+    };
 
-                setIsLoading(false);
-            };
+    fetchData();
+  }, []);
 
-            fetchData();
-        }
-    }, []);
-
-    return { data, isLoading, error };
+  return { data, isLoading, error };
 };
 
 export default useOctokitFetch;

@@ -1,41 +1,55 @@
-import cssImage from "./css3-01-svgrepo-com.svg";
-import javascriptImage from "./javascript-svgrepo-com.svg";
-import nodeJsImage from "./nodejs.svg";
-import nextJS from "./nextjs-icon.svg";
-import materialUI from "./styled-components.svg";
-import tailwindCSS from "./tailwind-svgrepo-com.svg";
+import astro from "./astrojs.svg";
 import bootstrap from "./bootstrap-4.svg";
+import chai from "./chai-seeklogo.com.svg";
+import cssImage from "./css.png";
 import htmlCinco from "./html-5-svgrepo-com.svg";
+import javascriptImage from "./javascript-svgrepo-com.svg";
 import jest from "./jest.svg";
 import jira from "./jira.svg";
-import react from "./react.svg";
+import materialUI from "./materialui.png";
+import mocha from "./mocha.svg";
+import mongoDB from "./mongodb.svg";
+import mysql from "./mysql-official.svg";
+import nextJS from "./nextjs.svg";
+import nodeJs from "./nodejs.svg";
+import postgre from "./postgreSql.jpg";
+import python from "./python.jpg";
+import reactQuery from "./react-query.png";
+import react from "./react.png";
+import styledComponents from "./StyledC.png";
+import tailwindCSS from "./tailwind.png";
+import testingLibrary from "./testinglibrary.png";
 import typescript from "./typescript.svg";
 import vite from "./vite.svg";
-import mongoDB from "./mongodb.svg";
-import mocha from "./mocha.svg";
-import chai from "./chai-seeklogo.com.svg";
-import java from "./java.svg";
-import spring from "./springboot-custom.svg";
-import mysql from "./mysql-official.svg";
+import vitest from "./vitest.png";
+import webpack from "./webpack.png";
+import zustand from "./zustand.jpeg";
 
 export const images = {
-  cssImage: cssImage,
-  javascriptImage: javascriptImage,
-  nodeJsImage: nodeJsImage,
-  nextJS: nextJS,
-  materialUI: materialUI,
-  tailwindCSS: tailwindCSS,
+  astro: astro,
   bootstrap: bootstrap,
+  chai: chai,
+  cssImage: cssImage,
   htmlCinco: htmlCinco,
+  javascriptImage: javascriptImage,
   jest: jest,
   jira: jira,
+  materialUI: materialUI,
+  mocha: mocha,
+  mongoDB: mongoDB,
+  mysql: mysql,
+  nextJS: nextJS,
+  nodeJs: nodeJs,
+  python: python,
   react: react,
+  reactQuery: reactQuery,
+  postgre: postgre,
+  styledComponents: styledComponents,
+  tailwindCSS: tailwindCSS,
+  testingLibrary: testingLibrary,
   typescript: typescript,
   vite: vite,
-  mongoDB: mongoDB,
-  mocha: mocha,
-  chai: chai,
-  java: java,
-  spring: spring,
-  mysql: mysql,
+  vitest: vitest,
+  webpack: webpack,
+  zustand: zustand,
 };

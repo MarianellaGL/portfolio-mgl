@@ -1,35 +1,16 @@
-import { Navigation } from '@/Components/Navigation'
-import './globals.css'
-import type { Metadata } from 'next'
-import { Nunito } from 'next/font/google'
-import { Footer } from '@/Components/Footer'
-
-const nunito = Nunito({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'Marianella Gomez Luna Portfolio',
-  description: 'Bienvenidos a mi mundillo',
-  icons: {
-    icon: [
-      {
-        url: '/favicon.ico'
-      }
-    ]
-  }
-}
+import { redirect } from "next/navigation";
+import { defaultLocale } from "../../next-i18next.config";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={nunito.className}>
-        <Navigation />
-        {children}
-        <Footer />
+    <html lang={defaultLocale}>
+      <body suppressHydrationWarning>
+        <>{children}</>
       </body>
     </html>
-  )
+  );
 }
