@@ -67,7 +67,11 @@ export const Navigation: React.FC = () => {
               <LanguageSwitcherButton className="relative hidden lg:inline-flex items-center px-2 py-1 sm:px-3 sm:py-2 rounded-lg border-2 border-fuchsia-300 bg-fuchsia-800/60 text-white text-xs sm:text-sm font-semibold shadow-md shadow-fuchsia-500/20 focus-visible:ring-2 focus-visible:ring-fuchsia-400 transition-all duration-300 hover:bg-fuchsia-700/80" />
               <div className="flex justify-center">
                 <a
-                  href="/marianellaGomezLuna.pdf"
+                  href={
+                    locale === "en"
+                      ? "/MarianellaGomezLuna-Resume.pdf"
+                      : "/MarianellaGomezLuna-CV.pdf"
+                  }
                   download={
                     locale === "en"
                       ? "MarianellaGomezLuna-Resume.pdf"

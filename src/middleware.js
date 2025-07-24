@@ -10,5 +10,5 @@ export default createMiddleware({
 });
 
 export const config = {
-  matcher: ["/((?!api|_next|_static|favicon.ico|.*\\..*).*)"],
+  matcher: ["/((?!api|_next|_static|favicon.ico|.*\\.(?:js|css|png|jpg|jpeg|gif|svg|webp|ico|txt|pdf|woff2?|ttf)).*)"],
 };
